@@ -1,0 +1,18 @@
+*~
+build/
+.cache/
+.coverage
+dist/
+*.egg-info/
+htmlcov/
+.idea/
+instance/
+*.pyc
+__pycache__/
+.pytest_cache/
+*.swp
+
+# The virtual environment normally wouldn't go into the Git repo, but I
+# want to be able to recreate the environment for the classroom on the fly
+# and I _don't_ want to require students do the install/setup process.
+#venv/
