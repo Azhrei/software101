@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <link rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+  </script>
+  <script
+      src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+  </script>
+  <style type="text/css">
+    code { white-space: pre; }
+    table { border: solid blue 1px; margin-bottom: 0.5em; }
+    td, th { padding: 2px 2px 0px 4px; }
+    li { padding-top: 1em; content: "<input type='checkbox'>"; }
+  </style>
+</head>
+<body class="container">
+<h1 id="instructions-for-chapter-5-lab">Instructions for Chapter 5 Lab</h1>
+<h3 id="part-0-setup">Part 0 (setup)</h3>
+<ol style="list-style-type: decimal">
+<li>Open <code>File Manager</code>, navigate to the <code>software101</code> directory. Now, double-click on the <code>get_updates.sh</code> script.</li>
+</ol>
+<h3 id="part-1-initialize-the-flask-demo">Part 1 (initialize the Flask demo)</h3>
+<ol style="list-style-type: decimal">
+<li><p>Open <code>Terminal</code> and change to the <code>software101</code> directory by executing <code>cd software101</code></p></li>
+<li><p>Change to the Chapter 5 directory by executing <code>cd ch05_serverside</code></p></li>
+<li><p>Change to the tutorial directory by executing <code>cd tutorial</code></p></li>
+<li><p>Run <code>flask init-db</code> in the tutorial directory</p></li>
+</ol>
+<h3 id="part-2-setup-the-environment-variables-and-run-the-application">Part 2 (setup the environment variables and run the application)</h3>
+<ol style="list-style-type: decimal">
+<li><p>You must be in the <code>software101/ch05_serverside/tutorial</code> directory. If you just finished Part 1, this will already be the case.</p></li>
+<li><p>Set the environment (both case-sensitive and space-sensitive):</p>
+<p><code>export FLASK_APP=flaskr FLASK_ENV=development</code></p></li>
+<li><p>Execute <code>flask run</code> to run the tutorial</p></li>
+<li><p>Use a web browser to visit the URL (shown in the output) and interact with the server</p>
+<ol style="list-style-type: decimal">
+<li><p>Register as a user on the server</p></li>
+<li><p>Login using the newly registered account</p></li>
+<li><p>Add two posts to the chat channel</p></li>
+</ol></li>
+<li><p>Edit <code>flaskr/templates/auth/login.html</code>. It's probably easiest to use <code>PyCharm</code> for this.</p></li>
+<li><p>Change the message from <code>Log In</code> to <code>Log In to the Flaskr Application</code></p></li>
+<li><p>Go back to the browser window and logout of the application, then log back in. Did your new message come up? Should it have?</p></li>
+<li><p>During the lab review, we will execute <code>wireshark</code> while executing this application and discuss the output it shows</p></li>
+</ol>
+<!--#include virtual="/FOOTER.html" -->
+</body>
+</html>
