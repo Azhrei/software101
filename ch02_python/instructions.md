@@ -2,7 +2,7 @@
 
 ### Part 0 (setup)
 
-1. Open `Terminal`, change into the `software101` directory, then into `student_files`.  Now, execute `git pull`.
+1. Open `File Manager`, navigate to the `software101` directory.  Now, double-click on the `get_updates.sh` script.
 
 2. Open `PyCharm`, if it's not already open.
 
