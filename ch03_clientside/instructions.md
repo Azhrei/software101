@@ -2,7 +2,8 @@
 
 ### Part 0 (setup)
 
-1. Open `File Manager`, navigate to the `software101` directory.  Now, double-click on the `get_updates.sh` script.
+1. Open `Files` and navigate to the `software101` directory.
+Now, double-click on the `get_updates.sh` script.
 
 2. Open `PyCharm`, if it's not already open.
 

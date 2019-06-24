@@ -2,7 +2,7 @@
 
 ### Part 0 (setup)
 
-1. Open `File Manager`, navigate to the `software101` directory.
+1. Open `Files` and navigate to the `software101` directory.
 Now, double-click on the `get_updates.sh` script.
 
 ### Part 1 (initialize the Flask demo)

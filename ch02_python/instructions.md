@@ -2,7 +2,8 @@
 
 ### Part 0 (setup)
 
-1. Open `File Manager`, navigate to the `software101` directory.  Now, double-click on the `get_updates.sh` script.
+1. Open `Files` and navigate to the `software101` directory.
+Now, double-click on the `get_updates.sh` script.
 
 2. Open `PyCharm`, if it's not already open.
 
@@ -22,6 +23,6 @@
 
 ### Part 3 (demonstration of network modules and HTML parsing)
 
-1. Load and execute an HTML screen scraper
+1. Click on the `webget.py` file to open it.
 
 2. Read through the comments at the top of the script and make the changes as specified.
