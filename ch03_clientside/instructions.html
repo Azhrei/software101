@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <link rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+  </script>
+  <script
+      src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+  </script>
+  <style type="text/css">
+    code { white-space: pre; }
+    table { border: solid blue 1px; margin-bottom: 0.5em; }
+    td, th { padding: 2px 2px 0px 4px; }
+    li { padding-top: 1em; content: "<input type='checkbox'>"; }
+  </style>
+</head>
+<body class="container">
+<h1 id="instructions-for-chapter-3-lab">Instructions for Chapter 3 Lab</h1>
+<h3 id="part-0-setup">Part 0 (setup)</h3>
+<ol style="list-style-type: decimal">
+<li><p>Open <code>File Manager</code>, navigate to the <code>software101</code> directory. Now, double-click on the <code>get_updates.sh</code> script.</p></li>
+<li><p>Open <code>PyCharm</code>, if it's not already open.</p></li>
+<li><p>Expand the listing for the chapter 3 directory.</p></li>
+</ol>
+<h3 id="part-1-demonstration-of-the-browsers-developer-tools">Part 1 (demonstration of the browser's developer tools)</h3>
+<ol style="list-style-type: decimal">
+<li><p>Load the <code>Firefox</code> browser and navigate to the NIST web site (the same one as the previous lab exercise, <a href="https://www.nist.gov/topics/cybersecurity" class="uri">https://www.nist.gov/topics/cybersecurity</a>)</p></li>
+<li><p>Open the browser's <em>DevTools</em> by selecting <em>Tools → Web Developer → Toggle Tools</em></p></li>
+<li><p>Now click the browser's <code>Reload</code> button that appears in the content of the <code>Network</code> tab</p></li>
+<li><p>Answer these questions about the results:</p>
+<ol style="list-style-type: decimal">
+<li><p>How many HTML documents are there?</p></li>
+<li><p>How many CSS documents?</p></li>
+<li><p>Which component of the page took the longest to load?</p></li>
+<li><p>Were any of the requests loaded in parallel to the others? How can you tell?</p></li>
+</ol></li>
+</ol>
+<h3 id="part-2-demonstration-of-wireshark">Part 2 (demonstration of <code>wireshark</code>)</h3>
+<ol style="list-style-type: decimal">
+<li><p>Open <code>wireshark</code> and select <code>enp0s3</code></p></li>
+<li><p>Click the <code>Capture Options</code> button to set the capture filter</p></li>
+<li><p>Click the <code>Capture Filter</code> and enter <code>tcp port https</code> (if a warning comes up, click OK to ignore it)</p></li>
+<li><p>Click <code>Start</code> to begin capturing network packets</p></li>
+<li><p>While the capture is running, switch to <code>PyCharm</code> and run the <code>webget.py</code> script (it's a copy of the HTML screen scraper from the previous chapter)</p></li>
+<li><p>When the script has completed, go back to <code>wireshark</code> and stop the capture</p></li>
+<li><p>Analyze the contents of the display and answer these questions:</p>
+<ol style="list-style-type: decimal">
+<li><p>Can you identify the various network protocols? TCP, UDP, and so on?</p></li>
+<li><p>You should see some HTTPS packets. What do they contain?</p></li>
+</ol></li>
+<li><p>We'll be discussing the contents of the <code>wireshark</code> window in the next chapter. For now, you can close the browser and the <code>wireshark</code> window -- you won't be using them again right away</p></li>
+</ol>
+<!--#include virtual="/FOOTER.html" -->
+</body>
+</html>
