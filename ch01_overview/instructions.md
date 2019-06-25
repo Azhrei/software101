@@ -2,11 +2,15 @@
 
 ### Part 0 (setup)
 
-1. Open `Files` and navigate to the `software101` directory.
-Now, double-click on the `get_updates.sh` script.
-You'll do this as the first step of every lab to download the latest and greatest changes from GitHub.
-(In reality, unless changes have actually been made, you can script this step.
-But it's not difficult, so doing it is the safest play.)
+1. Open `Terminal` and navigate to the `software101` directory by
+typing `cd software101` and pressing _Enter_ at the command prompt.
+Execute `git pull` to pull any updates to the GitHub repository down to
+your virtual machine.
+
+2. You'll do this as the first step of every lab to download the
+latest and greatest changes.  (In reality, unless changes have
+actually been made, you can skip this step.  But it's not difficult,
+so doing it is the safest play.)
 
 ### Part 1 (overview of `PyCharm` and Python)
 
@@ -24,7 +28,7 @@ But it's not difficult, so doing it is the safest play.)
 
 7. A new tab will open below the others that shows the output of the script.  Please spend a few minutes examining the output and we'll discuss the particulars during the lab review. (If you're the curious type, you can examine the other options on the right-click menu, or even browse through the pulldown menus at the top of the window.  I frequently do this when using a new application for the first time, just to get an idea of the kinds of options that the application supports.  Don't be shy about trying them to see what they do!)
 
-### Part 2 -- Optional (Jupyter)
+### Part 2 (optional demonstration of Jupyter)
 
 0. This part is optional.  If you have time and want to try these steps,
 please do so, but they're not used within Cisco and the lab review

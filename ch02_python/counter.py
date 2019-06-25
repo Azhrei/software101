@@ -61,11 +61,13 @@ For the lab:
     First, swap the output fields so that the value is printed first,
     then the client IP address/hostname.  Do this without modifying the
     `print()` statement at the bottom of the script.  Run the script to
-    make sure it works as expected.
+    make sure it works as expected.  (It should print the quantity
+    first, then the IP address/hostname.)
 
-    Now add some formatting to the numeric field so that it is always 4
-    digits wide.  Run the script again and notice how it looks _so_ much
-    better with the numbers lining up!
+    Now add some formatting to the numeric field so that it is always
+    four characters wide (in other words, pad the value with spaces so
+    that the numeric fields all line up).  Run the script again and
+    notice how it looks _so_ much better with the numbers lining up!
 """
 
 import sys

@@ -2,8 +2,10 @@
 
 ### Part 0 (setup)
 
-1. Open `Files` and navigate to the `software101` directory.
-Now, double-click on the `get_updates.sh` script.
+1. Open `Terminal` and navigate to the `software101` directory by
+typing `cd software101` and pressing _Enter_ at the command prompt.
+Execute `git pull` to pull any updates to the GitHub repository down to
+your virtual machine.
 
 2. Open `PyCharm`, if it's not already open.
 

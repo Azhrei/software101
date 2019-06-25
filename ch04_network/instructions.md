@@ -2,7 +2,7 @@
 
 ### Part 0 (notes for the instructor)
 
-1. Use `wireshark` and discuss in detail the results of the last lab
+1. Execute `wireshark` and discuss in detail the results of the last lab
 
 2. Show XML vs. JSON (if possible) and compare aspects of each
 
