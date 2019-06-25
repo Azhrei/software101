@@ -36,7 +36,7 @@ If you just finished Part 1, this will already be the case.
 4. Use a web browser to visit the URL (shown in the output) and
 interact with the server
 
-    1. Register as a user on the server
+    1. Register as a user on the server (pick any username and password you wish)
 
     2. Login using the newly registered account
 
