@@ -7,44 +7,32 @@ typing `cd software101` and pressing _Enter_ at the command prompt.
 Execute `git pull` to pull any updates to the GitHub repository
 down to your virtual machine.
 
-### Part 1 (initialize the Flask demo)
+### Part 1 (clone the `software101` repo and modify it)
 
-1. Open `Terminal` and change to the `software101` directory by
-executing `cd software101`
+1. Open a `Terminal` prompt if you don't have one open already.
+Then execute `cd` byt itself, that'll put you into `student`'s home
+directory.
 
-2. Change to the Chapter 5 directory by executing `cd ch05_serverside`
+1. Clone the `software101` repo into the current directory
 
-3. Change to the tutorial directory by executing `cd tutorial`
+2. Modify two existing files and create a new file
 
-4. Run `flask init-db` in the tutorial directory
+3. Run git status to see the result.
 
-### Part 2 (setup the environment variables and run the application)
+4. Run git commit and notice only the two modified files are represented.  Exit without committing.
 
-1. You must be in the `software101/ch05_serverside/tutorial` directory.
-If you just finished Part 1, this will already be the case.
+5. Run git add to add the new file to the repo.
 
-2. Set the environment (both case-sensitive and space-sensitive):
+6. Run git commit again and notice all three are included.
 
-    `export FLASK_APP=flaskr FLASK_ENV=development`
+7. Transition: “But what about multiple developers working at the same time?”
 
-3. Execute `flask run` to run the tutorial
+8. Create a new branch by executing git checkout -b bug123
 
-4. Use a web browser to visit the URL (shown in the output) and
-interact with the server
+9. Modify a file and commit it
 
-    1. Register as a user on the server
+10. Switch back to the master branch with git checkout master
 
-    2. Login using the newly registered account
+11. Merge the change by executing git merge bug123
 
-    3. Add two posts to the chat channel
-
-5. Edit `flaskr/templates/auth/login.html`.  It's probably easiest
-to use `PyCharm` for this.
-
-6. Change the message from `Log In` to `Log In to the Flaskr Application`
-
-7. Go back to the browser window and logout of the application,
-then log back in.  Did your new message come up?  Should it have?
-
-8. During the lab review, we will execute `wireshark` while executing
-this application and discuss the output shown
+12. Run gitk to view the commit tree graphically

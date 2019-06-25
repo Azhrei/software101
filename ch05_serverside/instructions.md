@@ -16,6 +16,10 @@ executing `cd software101`
 
 3. Change to the tutorial directory by executing `cd tutorial`
 
+2. Set the environment (both case-sensitive and space-sensitive):
+
+    `export FLASK_APP=flaskr FLASK_ENV=development`
+
 4. Run `flask init-db` in the tutorial directory
 
 ### Part 2 (setup the environment variables and run the application)
