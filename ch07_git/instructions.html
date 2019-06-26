@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <link rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+  </script>
+  <script
+      src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+  </script>
+  <style type="text/css">
+    code { white-space: pre; }
+    table { border: solid blue 1px; margin-bottom: 0.5em; }
+    td, th { padding: 2px 2px 0px 4px; }
+    li { padding-top: 1em; content: "<input type='checkbox'>"; }
+  </style>
+</head>
+<body class="container">
+<h1 id="instructions-for-chapter-5-lab">Instructions for Chapter 5 Lab</h1>
+<h3 id="part-0-setup">Part 0 (setup)</h3>
+<ol style="list-style-type: decimal">
+<li>Open <code>Terminal</code> and navigate to the <code>software101</code> directory by typing <code>cd software101</code> and pressing <em>Enter</em> at the command prompt. Execute <code>git pull</code> to pull any updates to the GitHub repository down to your virtual machine.</li>
+</ol>
+<h3 id="part-1-clone-the-software101-repo-and-modify-it">Part 1 (clone the <code>software101</code> repo and modify it)</h3>
+<ol style="list-style-type: decimal">
+<li><p>Open a <code>Terminal</code> prompt if you don't have one open already. Then execute <code>cd</code> by itself, that'll put you into <code>student</code>'s home directory.</p></li>
+<li><p>Clone the <code>software101</code> repo into another directory named <code>copied</code>. You can use this command: <code>git clone software101 copied</code>.</p></li>
+</ol>
+<p>Normally, the source repo would be remote and you'd use an <code>https://</code> or <code>git://</code> prefix to access it, but cloning a local repo is perfectly valid as well.</p>
+<ol start="2" style="list-style-type: decimal">
+<li><p>At any point throughout this lab, you can execute <code>git status</code> or <code>git log</code> to see the current state of the repo (some lab steps will tell you to run these commands, but you can do so at any time)</p></li>
+<li><p>Modify two existing files and create a new file (your choice as to which ones); you can use <code>PyCharm</code> for this, but be sure you're in the correct directory! That will require using the <em>File</em> menu and choosing <em>Close project</em>, then selecting the new directory from the <code>PyCharm</code> window that appears</p></li>
+<li><p>Run <code>git status</code> to see the result.</p></li>
+<li><p>Now we're going to commit our changes into the git repo. You will be thrown into <code>vi</code> in the next command if you don't specify a different editor, so let's change it to <code>nano</code> instead. Execute <code>export EDITOR=nano</code> before running the next command and it'll use that editor instead of <code>vi</code></p></li>
+</ol>
+<p>Run <code>git commit</code> and notice only the two modified files are represented, not the new one you created. Exit without committing.</p>
+<ol start="5" style="list-style-type: decimal">
+<li><p>Run <code>git add .</code> to add the new file to the repo's index</p></li>
+<li><p>Run <code>git status</code> to see the result.</p></li>
+<li><p>Run <code>git commit</code> again and notice all three are included (since you terminated the previous commit, the two modified files are still shown)</p></li>
+</ol>
+<h3 id="part-2-multiple-developers-working-on-the-same-project">Part 2 (multiple developers working on the same project)</h3>
+<ol style="list-style-type: decimal">
+<li><p>Create a new branch by executing <code>git checkout -b bug123</code></p></li>
+<li><p>Modify a file and commit it</p></li>
+<li><p>Switch back to the <code>master</code> branch with <code>git checkout master</code></p></li>
+<li><p>Merge the change by executing <code>git merge bug123</code>. This simulates someone else making a change in the &quot;bug&quot; branch and you merging in their changes.</p></li>
+<li><p>Run <code>gitk</code> to view the commit tree graphically</p></li>
+</ol>
+<!--#include virtual="/FOOTER.html" -->
+</body>
+</html>
