@@ -21,18 +21,17 @@
   </style>
 </head>
 <body class="container">
-<h1 id="instructions-for-chapter-3-lab">Instructions for Chapter 3 Lab</h1>
+<h1 id="instructions-for-chapter-4-lab">Instructions for Chapter 4 Lab</h1>
 <h3 id="part-0-setup">Part 0 (setup)</h3>
 <ol style="list-style-type: decimal">
-<li><p>Open <code>Terminal</code> and navigate to the <code>software101</code> directory by typing <code>cd software101</code> and pressing <em>Enter</em> at the command prompt. Execute <code>git pull</code> to pull any updates to the GitHub repository down to your virtual machine.</p></li>
-<li><p>Open <code>PyCharm</code>, if it's not already open.</p></li>
-<li><p>Expand the listing for the chapter 3 directory.</p></li>
+<li><p>Open <code>PyCharm</code> and open the <code>software101</code> project, if it's not already open.</p></li>
+<li><p>Right-click on <code>software101</code> and choose <em>Git &gt; Repository &gt; Pull...</em> and click <strong>OK</strong> to pull down and merge anything that might've changed from the original GitHub repository.</p></li>
 </ol>
 <h3 id="part-1-demonstration-of-the-browsers-developer-tools">Part 1 (demonstration of the browser's developer tools)</h3>
 <ol style="list-style-type: decimal">
 <li><p>Load the <code>Firefox</code> browser and navigate to the NIST web site (the same one as the previous lab exercise, <a href="https://www.nist.gov/topics/cybersecurity" class="uri">https://www.nist.gov/topics/cybersecurity</a>)</p></li>
 <li><p>Open the browser's <em>DevTools</em> by selecting <em>Tools → Web Developer → Toggle Tools</em></p></li>
-<li><p>Click the browser's <code>Reload</code> button that appears in the content of the <code>Network</code> tab</p></li>
+<li><p>Click the browser's <code>Reload</code> button that appears in the content of the <code>Network</code> tab.</p></li>
 <li><p>Answer these questions about the results:</p>
 <ol style="list-style-type: decimal">
 <li><p>How many HTML documents are there?</p></li>
@@ -40,21 +39,7 @@
 <li><p>Which component of the page took the longest to load?</p></li>
 <li><p>Were any of the requests loaded in parallel to the others? How can you tell?</p></li>
 </ol></li>
-</ol>
-<h3 id="part-2-demonstration-of-wireshark">Part 2 (demonstration of <code>wireshark</code>)</h3>
-<ol style="list-style-type: decimal">
-<li><p>Open <code>wireshark</code> and select <code>enp0s3</code></p></li>
-<li><p>Click the <code>Capture Options</code> button to set the capture filter</p></li>
-<li><p>Click the <code>Capture Filter</code> and enter <code>tcp port https</code> (if a warning comes up, click OK to ignore it)</p></li>
-<li><p>Click <code>Start</code> to begin capturing network packets</p></li>
-<li><p>While the capture is running, switch to <code>PyCharm</code> and run the <code>webget.py</code> script (it's a copy of the HTML screen scraper from the previous chapter)</p></li>
-<li><p>When the script has completed, go back to <code>wireshark</code> and stop the capture</p></li>
-<li><p>Analyze the contents of the <code>wireshark</code> display and answer these questions:</p>
-<ol style="list-style-type: decimal">
-<li><p>Can you identify the various network protocols? TCP, UDP, and so on?</p></li>
-<li><p>You should see some HTTPS packets. What do they contain?</p></li>
-</ol></li>
-<li><p>We'll be discussing the contents of the <code>wireshark</code> window in the next chapter. For now, you can close the browser and the <code>wireshark</code> window -- you won't be using them again right away</p></li>
+<li><p>A later lab will demonstrate using the <em>DevTools</em> to look at actual web content, like XML and/or JSON data as it flows from client to server and back again.</p></li>
 </ol>
 <!--#include virtual="/FOOTER.html" -->
 </body>

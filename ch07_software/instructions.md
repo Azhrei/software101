@@ -2,23 +2,24 @@
 
 ### Part 0 (setup)
 
-1. Open `Terminal` and navigate to the `software101` directory by
-typing `cd software101` and pressing _Enter_ at the command prompt.
-Execute `git pull` to pull any updates to the GitHub repository
-down to your virtual machine.
+1. Open `PyCharm` and open the `software101` project, if it's not
+   already open.
 
-### Lab Ideas?
+2. Right-click on `software101` and choose _Git \> Repository \>
+   Pull..._ and click **OK** to pull down and merge anything that
+   might've changed from the original GitHub repository.
 
-I'm looking for things that might be relevant for this lab.
+### Part 1 (bringing it all home!)
 
-We've already covered many of the Python modules, but we could do a walk
-through that demonstrates how the modules are used by the application.
+1. This lab will tie together many of the pieces from previous chapters.
 
-I also considered an example of running the Flask server inside a
-container, then perhaps running another container that connects to the
-first one.  But I expect the students in this course are already
-familiar with containers, so I didn't think this would be particularly
-informative.
-
-So for now, we'll just take a quick break while we discuss options,
-and then move on to the next chapter.
+2. It will demonstrate code that reads and writes XML data to a file,
+   and another one that does the same with JSON.
+   
+3. Those application will morph into server-side applications that
+   return data in XML and/or JSON in response to a browser request. it
+   will use `Connexion` to declaratively configure the RESTful
+   endpoints.
+   
+4. `Postman` will be used to interactively explore the JSON API provided
+   by the server side application.

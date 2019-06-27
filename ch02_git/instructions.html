@@ -21,36 +21,39 @@
   </style>
 </head>
 <body class="container">
-<h1 id="instructions-for-chapter-5-lab">Instructions for Chapter 5 Lab</h1>
-<h3 id="part-0-setup">Part 0 (setup)</h3>
+<h1 id="instructions-for-chapter-2-lab">Instructions for Chapter 2 Lab</h1>
+<h3 id="part-0-background">Part 0 (background)</h3>
 <ol style="list-style-type: decimal">
-<li>Open <code>Terminal</code> and navigate to the <code>software101</code> directory by typing <code>cd software101</code> and pressing <em>Enter</em> at the command prompt. Execute <code>git pull</code> to pull any updates to the GitHub repository down to your virtual machine.</li>
+<li><p>If you are ever asked by <code>PyCharm</code>, &quot;Project configurations files can be added to Git&quot;, select <strong>Don't Ask Again</strong>.</p></li>
+<li><p>The lab steps below will sometimes tell you to right-click on <code>software101</code> and choose a Git option, and other times will tell you to right-click on <code>ch01_overview</code> and choose a Git option. It doesn't actually matter which one you use, as Git operations apply to the entire project, not individual pieces. I use both in this lab to demonstrate that they operate the same way.</p></li>
 </ol>
-<h3 id="part-1-clone-the-software101-repo-and-modify-it">Part 1 (clone the <code>software101</code> repo and modify it)</h3>
+<h3 id="part-1-committing-changes">Part 1 (committing changes)</h3>
 <ol style="list-style-type: decimal">
-<li><p>Open a <code>Terminal</code> prompt if you don't have one open already. Then execute <code>cd</code> by itself, that'll put you into <code>student</code>'s home directory.</p></li>
-<li><p>Clone the <code>software101</code> repo into another directory named <code>copied</code>. You can use this command: <code>git clone software101 copied</code>.</p></li>
+<li><p>Using <code>PyCharm</code>, find the <code>ch01_overview</code> directory and the <code>python_info.py</code> script that you executed in the previous lab. Double-click the file in the <strong>Project</strong> panel so that it opens a tab on the right-hand side.</p></li>
+<li><p>Edit the script and remove the string <code>'path'</code> from the <code>for</code> loop. Also remove the trailing comma on that string as well. The result should look like this:</p></li>
 </ol>
-<p>Normally, the source repo would be remote and you'd use an <code>https://</code> or <code>git://</code> prefix to access it, but cloning a local repo is perfectly valid as well.</p>
-<ol start="2" style="list-style-type: decimal">
-<li><p>At any point throughout this lab, you can execute <code>git status</code> or <code>git log</code> to see the current state of the repo (some lab steps will tell you to run these commands, but you can do so at any time)</p></li>
-<li><p>Modify two existing files and create a new file (your choice as to which ones); you can use <code>PyCharm</code> for this, but be sure you're in the correct directory! That will require using the <em>File</em> menu and choosing <em>Close project</em>, then selecting the new directory from the <code>PyCharm</code> window that appears</p></li>
-<li><p>Run <code>git status</code> to see the result.</p></li>
-<li><p>Now we're going to commit our changes into the git repo. You will be thrown into <code>vi</code> in the next command if you don't specify a different editor, so let's change it to <code>nano</code> instead. Execute <code>export EDITOR=nano</code> before running the next command and it'll use that editor instead of <code>vi</code></p></li>
-</ol>
-<p>Run <code>git commit</code> and notice only the two modified files are represented, not the new one you created. Exit without committing.</p>
-<ol start="5" style="list-style-type: decimal">
-<li><p>Run <code>git add .</code> to add the new file to the repo's index</p></li>
-<li><p>Run <code>git status</code> to see the result.</p></li>
-<li><p>Run <code>git commit</code> again and notice all three are included (since you terminated the previous commit, the two modified files are still shown)</p></li>
+<p><code>python    for item in ('version', 'implementation'):</code></p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>Save the file.</p></li>
+<li><p>Right-click on the <code>ch01_overview</code> directory and choose <em>Git &gt; Commit Directory...</em> This will cause <code>PyCharm</code> to invoke Git and tell it to commit all changes in the directory to the repo.</p></li>
+<li><p>A window will open in which you should type a commit message. For our purposes, just use &quot;First change&quot; and then click <strong>Commit</strong> in the bottom right corner.</p></li>
+<li><p>You've now saved your changes. Let's say you've made several commits and you're ready to publish your code so that other programmers will have access to it. Normally, you don't publish your code unless it has passed all of its unit tests and other requirements.</p></li>
+<li><p>Publishing your changes means making them available to other programmers. We do that by <em>pushing</em> the changes in our repo to wherever we got the repo from. In our case, that would be the <code>https</code> URL that you used in the previous lab.</p></li>
+<li><p>Unfortunately, we can't do the <em>push</em> operation. I can't have students pushing code to my repository on GitHub! So let's just pretend that we did and move on to the next step.</p></li>
 </ol>
 <h3 id="part-2-multiple-developers-working-on-the-same-project">Part 2 (multiple developers working on the same project)</h3>
 <ol style="list-style-type: decimal">
-<li><p>Create a new branch by executing <code>git checkout -b bug123</code></p></li>
-<li><p>Modify a file and commit it</p></li>
-<li><p>Switch back to the <code>master</code> branch with <code>git checkout master</code></p></li>
-<li><p>Merge the change by executing <code>git merge bug123</code>. This simulates someone else making a change in the &quot;bug&quot; branch and you merging in their changes.</p></li>
-<li><p>Run <code>gitk</code> to view the commit tree graphically</p></li>
+<li><p>First, create a new branch to represent a bug fix. Right-click on <code>software101</code> in the <strong>Project</strong> panel and select <em>Git &gt; Repository &gt; Branches...</em></p></li>
+<li><p>Select <em>New Branch</em> and enter <code>bug123</code> as the name of the branch. Leave the <strong>Checkout</strong> checkbox turned on and click <strong>OK</strong>.</p></li>
+<li><p>Go back to the <code>for</code> loop in <code>python_info.py</code> and remove the <code>'version'</code> string time, and its trailing comma. Save the file.</p></li>
+<li><p>Right-click on the <code>ch01_overview</code> directory and choose <em>Git &gt; Commit Directory...</em></p></li>
+<li><p>A window will open in which you should type a commit message. For our purposes, just use &quot;Second change&quot; and then click <strong>Commit</strong> in the bottom right corner.</p></li>
+<li><p>Your changes have been committed to the <code>bug123</code> branch. They are <em>NOT</em> part of the main branch, called the <em>master</em> branch. I'll prove it to you.</p></li>
+<li><p>Switch back to the <code>master</code> branch by right-clicking on <code>software101</code> and choosing <em>Git &gt; Repository &gt; Branches...</em> and then clicking on <em>master</em> and choosing <em>Checkout</em>.</p></li>
+<li><p>You should see the content of <code>python_info.py</code> revert back to the value it had before, meaning that the word <code>'version'</code> should come back! (Removing that word was part of a different branch and those changes are stored in that branch, not in <em>master</em>.)</p></li>
+<li><p>However, we want the bug fix incorporated into the <em>master</em> branch. Let's merge the changes from that branch into the current one. Right-click on <code>software101</code> and choose <em>Git &gt; Repository &gt; Branches...</em> and then click on <code>bug123</code> and choose <strong>Merge into Current</strong>.</p></li>
+<li><p>Look at <code>python_info.py</code> and you'll see the changes from <code>bug123</code> are now there! At any point, you can use the right-click menu to choose <em>Git &gt; Show History</em> and see what has been committed or merged to whatever you right-clicked on; right-click on <code>software101</code> to see its history, or right-click on <code>ch01_overview</code> to see its history.</p></li>
+<li><p>All done! Get up and stretch before we continue on...</p></li>
 </ol>
 <!--#include virtual="/FOOTER.html" -->
 </body>

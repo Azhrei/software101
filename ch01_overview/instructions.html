@@ -24,31 +24,43 @@
 <h1 id="instructions-for-chapter-1-lab">Instructions for Chapter 1 Lab</h1>
 <h3 id="part-0-setup">Part 0 (setup)</h3>
 <ol style="list-style-type: decimal">
-<li><p>Open <code>Terminal</code> and navigate to the <code>software101</code> directory by typing <code>cd software101</code> and pressing <em>Enter</em> at the command prompt. Execute <code>git pull</code> to pull any updates to the GitHub repository down to your virtual machine.</p></li>
-<li><p>You'll do this as the first step of every lab to download the latest and greatest changes. (In reality, unless changes have actually been made, you can skip this step. But it's not difficult, so doing it is the safest play.)</p></li>
+<li>We're going to start by cleaning up any leftovers from previous use of the virtual machine. Start by opening the file manager -- it's the second icon from the top in the list along the left side of the screen. It's name, <em>Files</em>, will appear if you hover the mouse over it.</li>
+</ol>
+<p><a href="menubar.png">Link to <code>menubar.png</code> on GitHub</a></p>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Right-click on <code>PycharmProjects</code> and choose <em>Move to Trash</em>.</p></li>
+<li><p>Close the <em>Files</em> window.</p></li>
 </ol>
 <h3 id="part-1-overview-of-pycharm-and-python">Part 1 (overview of <code>PyCharm</code> and Python)</h3>
 <ol style="list-style-type: decimal">
 <li><p>Execute <code>PyCharm</code>.</p></li>
-<li><p>Close the <em>Tip of the Day</em> window when you're done reading the tips. (I invariably find one that I didn't know about and end up reading two or three each time I start <code>PyCharm</code>!) You can deselect the checkbox if you don't want the window to show up the next time you start <code>PyCharm</code>.</p></li>
-<li><p>Inside the Project panel on the left, you should see the <code>software101</code> folder. Click the arrow to the left of it to see the expanded contents of the folder.</p></li>
-<li><p>Now click again on the arrow to the left of the <code>ch01_overview</code> folder.</p></li>
-<li><p>Double-click on <code>python_info.py</code> and the contents of that text file will be shown in a separate tab on the right. (You can go into <em>File &gt; Settings...</em> and change font sizes and such, if you like, but we won't be doing that as part of the lab.)</p></li>
-<li><p>Run the code by right-clicking somewhere in the source code and selecting the <em>Run 'python_info'</em> option that's about half-way down the popup menu.</p></li>
-<li><p>A new tab will open below the others that shows the output of the script. Please spend a few minutes examining the output and we'll discuss the particulars during the lab review. (If you're the curious type, you can examine the other options on the right-click menu, or even browse through the pulldown menus at the top of the window. I frequently do this when using a new application for the first time, just to get an idea of the kinds of options that the application supports. Don't be shy about trying them to see what they do!)</p></li>
+<li><p>The startup panel will appear. For this course, we're going to choose the third option on the right, <em>Check out from Version Control</em> (and choose <strong>Git</strong>, if asked). The image below shows the startup panel.</p></li>
 </ol>
-<h3 id="part-2-optional-demonstration-of-jupyter">Part 2 (optional demonstration of Jupyter)</h3>
-<ol start="0" style="list-style-type: decimal">
-<li><p>This part is optional. If you have time and want to try these steps, please do so, but they're not used within Cisco and the lab review may or may not cover them.</p></li>
-<li><p>We'll now try something that doesn't involve <code>PyCharm</code>. (<code>PyCharm</code> is great, but you have to install the application. Let's try a browser-based editor that stores all of its results on a remote server.)</p></li>
-<li><p>Open a <code>Terminal</code> and type <code>jupyter-notebook</code>, then press <em>Enter</em>.</p></li>
+<p><a href="pycharm1.png">Link to <code>pycharm1.png</code> on GitHub</a></p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>In the <strong>URL:</strong> field, enter <code>https://github.com/Azhrei/software101.git</code>. Click <strong>Clone</strong>.</p></li>
+<li><p>Click <strong>Yes</strong> when asked if you want to open the directory.</p></li>
+<li><p>It may take a moment while <code>PyCharm</code> refreshes the contents of the project directory. You may see messages in the status bar at the bottom of the window indicating progress on various internal housekeeping that <code>PyCharm</code> does periodically.</p></li>
+<li><p>Close the <em>Tip of the Day</em> window when you're done reading the tips. (I invariably find one that I didn't know about and end up reading two or three each time I start <code>PyCharm</code>!) You can deselect the checkbox if you don't want the window to show up the next time you start <code>PyCharm</code>.</p></li>
+<li><p>Inside the <strong>Project</strong> panel on the left, you should see the <code>software101</code> folder. Click the arrow to the left of it to see the expanded contents of the folder.</p></li>
+<li><p>Click again on the arrow to the left of the <code>ch01_overview</code> folder. (Future labs will follow a similar pattern up to this point.)</p></li>
+<li><p>Double-click on <code>python_info.py</code> and the contents of that text file will be shown in a separate tab on the right. (You can go into <em>File &gt; Settings...</em> and change font sizes and such, if you like, but we won't be doing that as part of our labs.)</p></li>
+<li><p>Run the code by right-clicking somewhere within the source code and selecting the <em>Run 'python_info'</em> option that's about half-way down the popup menu.</p></li>
+<li><p>A new tab will open below the others that shows the output of the script. Please spend a few minutes examining the output and we'll discuss the particulars during the lab review.</p></li>
+<li><p>If you're the curious type, you can examine the other options on the right-click menu, or even browse through the pulldown menus at the top of the window. I frequently do this when using a new application for the first time, just to get an idea of the kinds of options that the application supports. Don't be shy about trying them to see what they do!</p></li>
+</ol>
+<h3 id="part-2-optional-demonstration-of-jupyter">Part 2 (OPTIONAL demonstration of Jupyter)</h3>
+<p>This part is optional. If you have time and want to try these steps, please do so, but they're not used within Cisco and the lab review may or may not cover them.</p>
+<ol style="list-style-type: decimal">
+<li><p>We'll now try something that doesn't involve <code>PyCharm</code>. In this portion, you'll try a browser-based editor that stores all of its results on a remote server.</p></li>
+<li><p>However, we don't have a remote server, so we'll create our own and run it within the virtual machine. Open a <code>Terminal</code> and type <code>jupyter-notebook</code>, then press <em>Enter</em>.</p></li>
 <li><p>You'll see some output scroll in the terminal window (maybe a dozen lines or so), and then a browser window will open that obscures the terminal. This is the main browser-based interface to <code>Jupyter</code>.</p></li>
-<li><p>Click on <code>software101</code>.</p></li>
-<li><p>Click on <code>ch01_overview</code>.</p></li>
-<li><p>As you might guess, you're now in the same directory as you were when using <code>PyCharm</code>.</p></li>
+<li><p>Click on <code>PycharmProjects</code>, then <code>software101</code>, and then <code>ch01_overview</code>.</p></li>
+<li><p>As you might guess, you're now in the same directory as you were when using <code>PyCharm</code>, above.</p></li>
 <li><p>You should see the <code>python_info.py</code> script that you just ran. (If you click on it, you'd be able to edit it within the browser and save it when you are done, but we're not going to do that right now.)</p></li>
-<li><p>You should also see the <code>python_info.ipynb</code> as well. Click on it and a new browser tab will open that shows the content of this file. This is called an <em>IPython Notebook</em>. We'll discuss how a notebook works during the lab review, but feel free to click around!</p></li>
+<li><p>You should also see the <code>python_info.ipynb</code> as well. Click on it and a new browser tab will open that shows the contents of this file. This is called an <em>IPython Notebook</em>. We'll discuss how a notebook works during the lab review, but feel free to click around!</p></li>
 <li><p>When you're done reviewing the notebook, you can close all of the browser tabs (and the browser window, too). If you have made changes that you want to keep, use the <em>File</em> menu or click on the <em>Save</em> icon (at the far left end of the toolbar).</p></li>
+<li><p>Closing the <code>Terminal</code> window will terminate that application and the command running inside of it, thus shutting down the jupyter server.</p></li>
 </ol>
 <!--#include virtual="/FOOTER.html" -->
 </body>

@@ -21,34 +21,41 @@
   </style>
 </head>
 <body class="container">
-<h1 id="instructions-for-chapter-5-lab">Instructions for Chapter 5 Lab</h1>
+<h1 id="instructions-for-chapter-6-lab">Instructions for Chapter 6 Lab</h1>
 <h3 id="part-0-setup">Part 0 (setup)</h3>
 <ol style="list-style-type: decimal">
-<li>Open <code>Terminal</code> and navigate to the <code>software101</code> directory by typing <code>cd software101</code> and pressing <em>Enter</em> at the command prompt. Execute <code>git pull</code> to pull any updates to the GitHub repository down to your virtual machine.</li>
+<li><p>Open <code>PyCharm</code> and open the <code>software101</code> project, if it's not already open.</p></li>
+<li><p>Right-click on <code>software101</code> and choose <em>Git &gt; Repository &gt; Pull...</em> and click <strong>OK</strong> to pull down and merge anything that might've changed from the original GitHub repository.</p></li>
 </ol>
 <h3 id="part-1-initialize-the-flask-demo">Part 1 (initialize the Flask demo)</h3>
 <ol style="list-style-type: decimal">
-<li><p>Open <code>Terminal</code> and change to the <code>software101</code> directory by executing <code>cd software101</code></p></li>
-<li><p>Change to the Chapter 5 directory by executing <code>cd ch05_serverside</code></p></li>
-<li><p>Change to the tutorial directory by executing <code>cd tutorial</code></p></li>
-<li><p>Run <code>flask init-db</code> in the tutorial directory</p></li>
+<li><p>Open <code>Terminal</code> and change to the <code>software101</code> directory by executing <code>cd software101</code>.</p></li>
+<li><p>Change to the Chapter 6 directory by executing <code>cd ch06_serverside</code>.</p></li>
+<li><p>Change to the tutorial directory by executing <code>cd tutorial</code>.</p></li>
+<li><p>Set the environment (these are both case-sensitive and space-sensitive):</p></li>
 </ol>
-<h3 id="part-2-setup-the-environment-variables-and-run-the-application">Part 2 (setup the environment variables and run the application)</h3>
+<p><code>export FLASK_APP=flaskr FLASK_ENV=development</code></p>
+<ol start="5" style="list-style-type: decimal">
+<li>Run <code>flask init-db</code> in the tutorial directory.</li>
+</ol>
+<h3 id="part-2-run-the-application">Part 2 (run the application)</h3>
 <ol style="list-style-type: decimal">
-<li><p>You must be in the <code>software101/ch05_serverside/tutorial</code> directory. If you just finished Part 1, this will already be the case.</p></li>
-<li><p>Set the environment (both case-sensitive and space-sensitive):</p>
+<li><p>You must be in the <code>software101/ch06_serverside/tutorial</code> directory. If you just finished Part 1, this will already be the case.</p></li>
+<li><p>Set the environment (these are both case-sensitive and space-sensitive). If you just finished Part 1, this will already be the case:</p>
 <p><code>export FLASK_APP=flaskr FLASK_ENV=development</code></p></li>
-<li><p>Execute <code>flask run</code> to run the tutorial</p></li>
-<li><p>Use a web browser to visit the URL (shown in the output) and interact with the server</p>
+<li><p>Execute <code>flask run</code> to run the tutorial.</p></li>
+</ol>
+<h3 id="part-3-use-the-browser-to-interact-with-the-application">Part 3 (use the browser to interact with the application)</h3>
 <ol style="list-style-type: decimal">
-<li><p>Register as a user on the server</p></li>
-<li><p>Login using the newly registered account</p></li>
-<li><p>Add two posts to the chat channel</p></li>
-</ol></li>
-<li><p>Edit <code>flaskr/templates/auth/login.html</code>. It's probably easiest to use <code>PyCharm</code> for this.</p></li>
-<li><p>Change the message from <code>Log In</code> to <code>Log In to the Flaskr Application</code></p></li>
-<li><p>Go back to the browser window and logout of the application, then log back in. Did your new message come up? Should it have?</p></li>
-<li><p>During the lab review, we will execute <code>wireshark</code> while executing this application and discuss the output shown</p></li>
+<li><p>If we want to see how the browser exchanges data with the server, we need to generate some of it first. That's what the next few steps do.</p></li>
+<li><p>Use a web browser to visit the URL (shown in the output) and interact with the server.</p></li>
+<li><p>Register as a user on the server (pick any username and password you wish).</p></li>
+<li><p>Login using the newly registered account.</p></li>
+<li><p>Add two posts to the chat channel.</p></li>
+<li><p>Edit <code>flaskr/templates/auth/login.html</code>. It's probably easiest to use <code>PyCharm</code> for this, but you'll need to drill down deep into the <code>tutorial</code> directory to locate this file.</p></li>
+<li><p>Change the message from <code>Log In</code> to <code>Log In to the Flaskr    Application</code></p></li>
+<li><p>Go back to the browser window and logout of the application, then log back in. Did your new message come up?</p></li>
+<li><p>During the lab review, we will use the <em>DevTools</em> of the browser to look at the data being passed back and forth between the browser and the server.</p></li>
 </ol>
 <!--#include virtual="/FOOTER.html" -->
 </body>

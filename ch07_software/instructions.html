@@ -21,16 +21,19 @@
   </style>
 </head>
 <body class="container">
-<h1 id="instructions-for-chapter-6-lab">Instructions for Chapter 6 Lab</h1>
+<h1 id="instructions-for-chapter-7-lab">Instructions for Chapter 7 Lab</h1>
 <h3 id="part-0-setup">Part 0 (setup)</h3>
 <ol style="list-style-type: decimal">
-<li>Open <code>Terminal</code> and navigate to the <code>software101</code> directory by typing <code>cd software101</code> and pressing <em>Enter</em> at the command prompt. Execute <code>git pull</code> to pull any updates to the GitHub repository down to your virtual machine.</li>
+<li><p>Open <code>PyCharm</code> and open the <code>software101</code> project, if it's not already open.</p></li>
+<li><p>Right-click on <code>software101</code> and choose <em>Git &gt; Repository &gt; Pull...</em> and click <strong>OK</strong> to pull down and merge anything that might've changed from the original GitHub repository.</p></li>
 </ol>
-<h3 id="lab-ideas">Lab Ideas?</h3>
-<p>I'm looking for things that might be relevant for this lab.</p>
-<p>We've already covered many of the Python modules, but we could do a walk through that demonstrates how the modules are used by the application.</p>
-<p>I also considered an example of running the Flask server inside a container, then perhaps running another container that connects to the first one. But I expect the students in this course are already familiar with containers, so I didn't think this would be particularly informative.</p>
-<p>So for now, we'll just take a quick break while we discuss options, and then move on to the next chapter.</p>
+<h3 id="part-1-bringing-it-all-home">Part 1 (bringing it all home!)</h3>
+<ol style="list-style-type: decimal">
+<li><p>This lab will tie together many of the pieces from previous chapters.</p></li>
+<li><p>It will demonstrate code that reads and writes XML data to a file, and another one that does the same with JSON.</p></li>
+<li><p>Those application will morph into server-side applications that return data in XML and/or JSON in response to a browser request. it will use <code>Connexion</code> to declaratively configure the RESTful endpoints.</p></li>
+<li><p><code>Postman</code> will be used to interactively explore the JSON API provided by the server side application.</p></li>
+</ol>
 <!--#include virtual="/FOOTER.html" -->
 </body>
 </html>
