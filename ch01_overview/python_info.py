@@ -10,6 +10,6 @@ import sys
 import pprint
 
 print("Values that apply to the running instance of Python:")
-for item in ('implementation'):
+for item in ('version', 'implementation'):
     print("\n{0:=^80}".format(item))
     pprint.pprint(vars(sys)[item])
