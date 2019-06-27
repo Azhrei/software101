@@ -10,9 +10,9 @@ For the lab:
 1.  Open this script in `PyCharm`.
 
 2.  Right-click inside the source code somewhere and choose the "Run"
-    option.
+    option, just as you have for previous scripts.
 
-3.  Examine the output that is produced.  Are they correct?
+3.  Examine the output that is produced.  Are the numbers correct?
 
     Of course, you can't know that unless you actually look in the
     logfile being used for input and verify it.  Go ahead and do that
@@ -28,11 +28,12 @@ For the lab:
     again.
 
     The result is a pretty ugly mess, right?  Let's clean it up.  We'll
-    do that the same as the previous script:  adding a try-except block.
+    do that the same as the previous script:  add a try-except block.
 
-    Add a line above the "with" statement that contains only, "try:".
-    You'll need to indent the "with" statement and the lines following
-    it, down to the end of the "with" block (about 10 lines).
+    Add a line above the "with" statement that contains only, "try:"
+    (don't forget the colon).  You'll need to indent the "with"
+    statement and the lines following it, down to the end of the "with"
+    block (about 10 lines).
 
     Add a line below the "with" block and contains only "except:".  When
     you press Enter, `PyCharm` will indent the following line.  Add a

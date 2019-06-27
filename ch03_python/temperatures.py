@@ -12,7 +12,7 @@ For the lab:
     Run > Edit Configurations... menu option.  In the dialog that opens,
     select this script from the list on the left.
 
-    Now you can put command line parameters into the "Script Parameters"
+    Now you can put command line parameters into the "Parameters"
     field on the right-hand side of the panel.  Add the string, "100 0 -40"
     and then click OK.  Now run the script again.  You should see the
     conversions for those three temperatures.
@@ -20,11 +20,13 @@ For the lab:
 2.  Change the command line parameters again and choose your own values.
     Pick at least two negative numbers and two positive numbers.
 
-3.  Change the format string so it uses "9.1f" instead of "6.2f".  Now
-    run the script.  Can you explain the difference in the output?
+3.  Change the format string so it uses "9.1f" instead of "6.2f" in both
+    places.  Now run the script.  Can you explain the difference in the
+    output?
 
-4.  Try using "hello" as a temperature on the command line.  What
-    happens when you run the script?
+4.  Try using "hello" as a temperature on the command line (that would
+    be Run > Edit Conifgurations... again).  What happens when you run
+    the script?
 
     Let's fix the error.  We could handle this error a few different
     ways, such as printing the error and continuing to process the
@@ -34,8 +36,9 @@ For the lab:
     accomplish this.
 
     Find the "for" loop, below.  On the line following the for command,
-    add the string "try:".  `PyCharm` will automatically indent the
-    command for you, so the "t" in "try" should be in column 4.
+    add the string "try:" (note that it's four characters).  `PyCharm`
+    will automatically indent the command for you, so the "t" in "try"
+    should be in column 4.
 
     But that's a problem, because the rest of the loop is NOT indented
     and thus won't be considered to be inside the try-except block.  So
