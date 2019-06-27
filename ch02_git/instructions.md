@@ -1,11 +1,4 @@
-# Instructions for Chapter 5 Lab
-
-### Part 0 (setup)
-
-1. Open `Terminal` and navigate to the `software101` directory by
-typing `cd software101` and pressing _Enter_ at the command prompt.
-Execute `git pull` to pull any updates to the GitHub repository
-down to your virtual machine.
+# Instructions for Chapter 2 Lab
 
 ### Part 1 (clone the `software101` repo and modify it)
 

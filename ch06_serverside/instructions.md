@@ -1,4 +1,4 @@
-# Instructions for Chapter 5 Lab
+# Instructions for Chapter 6 Lab
 
 ### Part 0 (setup)
 
