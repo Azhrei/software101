@@ -1,5 +1,16 @@
 # Instructions for Chapter 1 Lab
 
+### Part 0 (setup)
+
+1. We're going to start by cleaning up any leftovers from previous use
+   of the virtual machine. Start by opening the file manager -- it's the
+   second icon from the top in the list along the left side of the
+   screen. It's name, _Files_, will appear if you hover the mouse over
+   it.
+   
+   [Link to `menubar.png` on GitHub](menubar.png)
+
+
 ### Part 1 (overview of `PyCharm` and Python)
 
 1. Execute `PyCharm`.
@@ -15,9 +26,12 @@
 
 4. With the main window closed, the startup panel will appear. For this
    course, we're going to choose the third option on the right, _Check
-   out from Version Control_.
+   out from Version Control_ (and choose **Git**, if asked).
    
    [Link to `pycharm1.png` on GitHub](pycharm1.png)
+
+5. In the **URL:** field, enter
+   `https://github.com/Azhrei/software101.git`. Click **Clone**.
 
 5. It may take a moment while `PyCharm` refreshes the contents of the
    project directory. You may see messages in the status bar at the
