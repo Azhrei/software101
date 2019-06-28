@@ -12,7 +12,7 @@
 ### Part 1 (initialize the Flask demo)
 
 1. Open `Terminal` and change to the `software101` directory by
-   executing `cd software101`.
+   executing `cd PycharmProjects/software101`.
 
 2. Change to the Chapter 6 directory by executing `cd ch06_serverside`.
 
@@ -27,7 +27,7 @@
 
 ### Part 2 (run the application)
 
-1. You must be in the `software101/ch06_serverside/tutorial` directory.
+1. You must be in the `PycharmProjects/software101/ch06_serverside/tutorial` directory.
    If you just finished Part 1, this will already be the case.
 
 2. Set the environment (these are both case-sensitive and
